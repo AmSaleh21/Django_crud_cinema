@@ -46,6 +46,7 @@ THIRD_PARTY_APPS = [
 CUSTOM_APPS = [
     'movies',
     'actors',
+    'director',
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + CUSTOM_APPS

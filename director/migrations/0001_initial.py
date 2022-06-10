@@ -12,11 +12,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Actor',
+            name='Director',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('actor_name', models.CharField(max_length=25, unique=True, verbose_name='Name')),
-                ('gender', models.CharField(choices=[('male', 'male'), ('female', 'female')], default='male', max_length=6, verbose_name='Gender')),
+                ('director_name', models.CharField(max_length=30, unique=True, verbose_name='director name')),
+                ('gender', models.CharField(choices=[('male', 'male'), ('female', 'female')], default='male', max_length=6, verbose_name='gender')),
                 ('age', models.IntegerField(default=0)),
                 ('create_time', models.TimeField(auto_now=True, verbose_name='Created at')),
                 ('update_time', models.TimeField(auto_now=True, verbose_name='Updated at')),

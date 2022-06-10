@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
-{% block title %} {{ movie.name }} details {% endblock %}
+{% block title %} {{ movie.movie_name }} details {% endblock %}
 
 {% block body_content %}
     <div class="container my-5">
         <div class="card bg-dark">
-            <p class="h5 card-header">{{ movie.name }}</p>
+            <p class="h5 card-header">{{ movie.movie_name }}</p>
             <div class="card-body">
                 <p class="h5 card-title">Year: {{ movie.production_year }}</p>
                 <p class="h5 card-title">Actors</p>

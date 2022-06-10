@@ -17,12 +17,13 @@
             {% for movie in movies %}
                 <div class="card bg-dark m-3" style="width: 18rem;">
                     <div class="card-body">
-                        <p class="h5 card-title">{{ movie.id }}: {{ movie.name }}</p>
+                        <p class="h5 card-title">{{ movie.id }}: {{ movie.movie_name }}</p>
                         <p class="h6 card-title">year: {{ movie.production_year }}</p>
+                        <p class="h6 card-title">director: {{ movie.director }}</p>
                         <p class="card-text">Actors:</p>
                         <ul>
                             {% for actor in movie.actors.all %}
-                                <li> - {{ actor.name }} </li>
+                                <li> - {{ actor.actor_name }} </li>
                             {% endfor %}
                         </ul>
                         <a href='{% url "movies:details" movie.id %}'>
