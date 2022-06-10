@@ -10,7 +10,7 @@ class MovieInline(admin.StackedInline):
 
 @admin.register(Director)
 class DirectorAdmin(admin.ModelAdmin):
-    # search_fields = ('movies',)
+    search_fields = ('movies__movie_name',)
     list_display = ('director_name', 'age',)
 
 
