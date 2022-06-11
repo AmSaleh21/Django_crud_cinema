@@ -22,4 +22,6 @@ urlpatterns = [
     path('movies/', include('movies.urls')),
     path('account/', include('account.urls')),
     path('account/', include('django.contrib.auth.urls')),
+    path('api/v1/movies/', include('movies.api.v1.urls')),
+    path('api/v1/actors/', include('actors.api.v1.urls'))
 ]
