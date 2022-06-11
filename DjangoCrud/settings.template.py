@@ -39,6 +39,7 @@ DEFAULT_APPS = [
 
 THIRD_PARTY_APPS = [
     'crispy_forms',
+    'rest_framework.authtoken'
 ]
 
 CUSTOM_APPS = [
